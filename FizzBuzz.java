@@ -1,7 +1,15 @@
 public class FizzBuzz {
 
-    public static String print(byte number){
+    public static void printFizzBuzz(){
+        byte number = 1;
+        do {
+            System.out.println(getValue(number));
+            number += 1;
+        } while (number <= 100);
 
+    }
+
+    public static String getValue (byte number) {
         if (isMultipleOf3And5(number))
             return "FizzBuzz";
         else if (isMultipleOf3(number))
@@ -10,7 +18,6 @@ public class FizzBuzz {
             return "Buzz";
         else
             return String.valueOf(number);
-
     }
 
     public static boolean isMultipleOf3 (byte number) {

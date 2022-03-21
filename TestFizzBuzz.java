@@ -14,22 +14,22 @@ public class TestFizzBuzz {
 
     @Test
     public void shouldPrintFizzForMultipleOfThree(){
-        assertThat(initFizzBuzzInstance().print((byte) 3),is("Fizz"));
+        assertThat(initFizzBuzzInstance().getValue((byte) 3),is("Fizz"));
     }
 
     @Test
     public void shouldPrintBuzzForMultipleOfFive(){
-        assertThat(initFizzBuzzInstance().print((byte) 5),is("Buzz"));
+        assertThat(initFizzBuzzInstance().getValue((byte) 5),is("Buzz"));
     }
 
     @Test
     public void shouldPrintFizzBuzzForMultipleOfThreeAndFive(){
-        assertThat(initFizzBuzzInstance().print((byte) 15),is("FizzBuzz"));
+        assertThat(initFizzBuzzInstance().getValue((byte) 15),is("FizzBuzz"));
     }
 
     @Test
     public void shouldPrintNumberIfNotMultiple(){
-        assertThat(initFizzBuzzInstance().print((byte) 17),is("17"));
+        assertThat(initFizzBuzzInstance().getValue((byte) 17),is("17"));
     }
 
 }
